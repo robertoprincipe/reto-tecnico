@@ -1,0 +1,123 @@
+/*variable colors*/
+$color-primary: #2F80ED;
+$color-secondary: #83CC5E;
+$color-white: #fff;
+$color-black: #000;
+$color-gray: #A3ABCC;
+$color-gray-dark: #494F66;
+$color-gray-light: #D2D2D2;
+$color-blue: #278EC8;
+$color-blue-light: #00A6DE;
+$color-red-dark: #712557;
+$color-red-light: #e28dbd;
+$color-text: #95989A;
+
+$font-family: "Roboto",
+sans-serif;
+
+/*Responsive breakpoints*/
+$width-phone: 576px;
+$width-tablet: 768px;
+$width-desktop: 992px;
+$width-large: 1200px;
+
+/*Font Size*/
+$font10: 0.625em;
+$font12: 0.750em;
+$font14: 0.875em;
+$font16: 1em;
+$font18: 1.125em;
+$font20: 1.25em;
+$font24: 1.5em;
+$font26: 1.625em;
+$font30: 1.875em;
+$font36: 2.250em;
+$font40: 2.5em;
+$font46: 2.750em;
+$font48: 3em;
+
+/*extended*/
+.title-type {
+  color: $color-white;
+  text-align: center;
+  font-size: $font26;
+  line-height: $font20;
+  font-weight: 600;
+  margin: 0 0 .5em;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font36;
+    text-align: left;
+    margin: 0 0 .5em;
+  }
+
+}
+
+.title-type2 {
+  font-size: $font20;
+  line-height: $font16;
+  font-weight: 600;
+  line-height: normal;
+  color: $color-white;
+  margin: 1em 0 1em;
+
+  @media (min-width: $width-tablet) {
+    margin: 0 0 1em;
+    font-size: $font26;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: $font30;
+  }
+}
+
+.title-type3 {
+  color: $color-gray-dark;
+  text-align: left;
+  margin: 0 0 1em;
+  font-weight: 600;
+  font-size: $font24;
+  line-height: $font18 !important;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font26;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: $font36;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 2.8em;
+  margin: 0;
+  color: $color-white;
+  background-color: $color-primary;
+  font-size: $font16;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  &--transparent {
+    color: $color-primary !important;
+    background-color: transparent;
+    border: 1px solid $color-primary !important;
+    &:hover {
+      color: $color-white !important;
+      background-color: $color-primary;
+      border: 1px solid $color-white !important;
+    }
+  }
+  &--white {
+    color: $color-primary !important;
+    background-color: $color-white;
+    border: 1px solid $color-primary !important;
+    &:hover {
+      color: $color-white !important;
+      background-color: $color-primary;
+      border: 1px solid $color-white !important;
+    }
+  }
+}
+

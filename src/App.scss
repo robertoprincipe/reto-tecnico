@@ -1,0 +1,245 @@
+@import './assets/styles/variables';
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("./assets/fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Roboto-Regular.woff") format("woff"), url("./assets/fonts/Roboto-Regular.ttf") format("truetype"), url("./assets/fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url("./assets/fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Roboto-Medium.woff") format("woff"), url("./assets/fonts/Roboto-Medium.ttf") format("truetype"), url("./assets/fonts/Roboto-Medium.svg#Roboto-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url("./assets/fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Roboto-Bold.woff") format("woff"), url("./assets/fonts/Roboto-Bold.ttf") format("truetype"), url("./assets/fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family !important;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $color-gray;
+}
+
+.boxed {
+  position: relative;
+  margin: 0 auto;
+
+  @media (min-width: $width-phone) {
+    width: 540px;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 720px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 960px;
+  }
+
+  @media (min-width: $width-large) {
+    width: 1140px;
+  }
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+  color: $color-primary;
+}
+
+strong {
+  color: $color-gray-dark;
+}
+
+.button {
+  display: inline-block;
+  padding: 1.8em 3em;
+  margin: 0.5em 0;
+  color: $color-white !important;
+  font-size: $font14;
+  font-weight: 700;
+  text-align: center;
+  border: none !important;
+  border-radius: 5px;
+  background-color: $color-primary;
+  cursor: pointer;
+
+  @media (min-width: $width-tablet) {
+    width: auto;
+    font-size: $font16;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: auto;
+  }
+
+  &.center {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.full {
+    width: 100%;
+    display: block;
+  }
+
+  &.large {
+    padding: 1.2em 2.2em;
+  }
+
+  &:disabled {
+    background-color: $color-gray;
+  }
+
+  &.primary {
+    background-color: $color-primary !important;
+    color: $color-white !important;
+  }
+
+  &.secondary {
+    background-color: $color-secondary;
+  }
+
+  &.red {
+    background-color: red;
+  }
+
+  &.white {
+    background-color: $color-white !important;
+    border: 1px solid $color-black !important;
+    color: $color-black !important;
+  }
+
+}
+
+.p-float-label input.p-filled~label,
+.p-float-label .p-inputwrapper-filled~label {
+  //top: -.3rem !important;
+  top: .6rem !important;
+  font-size: 10px !important;
+  color: $color-gray !important
+}
+
+.font12 {
+  font-size: 12px !important;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+.ant-picker .anticon {
+  color: $color-primary;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: $color-secondary !important;
+  border-color: $color-secondary !important;
+}
+
+.ant-select-arrow svg {
+  color: $color-primary !important;
+}
+
+.ant-checkbox-wrapper {
+  color: $color-gray !important;
+}
+
+.ant-checkbox-wrapper a {
+  color: $color-gray !important;
+  text-decoration: underline !important;
+}
+
+.ant-btn {
+  font-weight: 700 !important;
+  border-radius: 8px !important;
+  border-color: $color-gray-light !important;
+  color: $color-primary !important;
+}
+
+.ant-btn-lg {
+  height: 50px !important;
+  padding: 8.4px 15px !important;
+  font-size: 14px !important;
+}
+
+.ant-btn-primary {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  border-color: $color-primary !important;
+  color: $color-white !important;
+}
+
+.primary {
+  color: $color-primary !important;
+}
+
+.gray {
+  color: $color-gray-dark !important;
+}
+
+
+.title {
+  font-size: $font40;
+  color: $color-gray-dark;
+  font-weight: 100;
+  line-height: normal;
+
+  span {
+    font-weight: 300;
+  }
+
+  &.white {
+    color: $color-white !important;
+  }
+}
+
+.subtitle {
+  font-size: $font20;
+  color: $color-gray;
+  font-weight: 100;
+  line-height: normal;
+  margin: 0 0 1em 0;
+
+  &.gray {
+    color: $color-gray-dark;
+  }
+}
+
+.ant-radio-checked .ant-radio-inner {
+  border-color: $color-secondary !important;
+}
+
+.ant-radio-checked::after {
+  border: 1px solid $color-secondary !important;
+}
+
+.ant-radio-inner::after {
+  background-color: $color-secondary !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.botonera {
+  margin: 3em 0 !important;
+
+  .ant-form-item-control-input-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
