@@ -1,3 +1,17 @@
+# RECTO TECNICO TATA - REACT JS TYPESCRIPT COIIZADOR SEGUROS
+
+## RUTA DEMO
+- Ir a http://retotata.cliqueale.com/
+
+## MODO LOCAL
+PASOS: 
+
+- git clone https://github.com/robertoprincipe/reto-tecnico.git
+- Ingresar carpeta "reto-tecnico" 
+- Ejecutar comando npm install
+- Ejecutar npm start (http://localhost:3000) to view it in the browser.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
