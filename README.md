@@ -1,4 +1,14 @@
-# RECTO TECNICO TATA - REACT JS TYPESCRIPT COIIZADOR SEGUROS
+# RETO TECNICO TATA - REACT JS TYPESCRIPT COTIZADOR SEGUROS
+
+## ESPECIFICACIONES
+- React JS V17
+- TYPESCRIPT
+- Implementación GRID SYSTEM / FLEXBOX / SASS
+- Libraría ANT DESIGN for REACT
+- REACT HOOK 
+- Validaciones
+- COMPONENTES FUNCIONALES y CLASES
+- Lectura API REST demo https://freestyle.getsandbox.com/dummy/- 
 
 ## RUTA DEMO
 - Ir a http://retotata.cliqueale.com/
